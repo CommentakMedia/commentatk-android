@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@drawable/center_content_profile_scroll_over"
+    android:layout_marginEnd="15dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="2dp"
+    android:id="@+id/linklinearLayout"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageblog"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/Cover_image"
+        android:layout_marginTop="0dp"
+        app:riv_corner_radius="5dp"/>
+	 
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/black_half_transparent"
+		android:orientation="vertical"
+		android:layout_centerInParent="true"
+		android:gravity="center">
+
+	    <TextView
+		    android:id="@+id/postblogText"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" 
+		    android:paddingStart="10dp"
+		    android:paddingEnd="10dp"
+		    android:textColor="@color/textLight_color"
+		    android:gravity="center"
+		    android:textStyle="bold"
+		    android:paddingTop="3dp"
+		    android:maxLines="2"
+		    android:textSize="16sp"/>
+
+	    <TextView
+		    android:id="@+id/catText"
+		    android:layout_below="@+id/postblogText"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" 
+		    android:gravity="center"
+		    android:textColor="@color/textLight_color"
+		    android:paddingTop="3dp"
+		    android:paddingStart="10dp"
+		    android:paddingEnd="10dp"
+		    android:maxLines="1"
+		    android:textSize="13sp"/>
+
+	    <TextView
+		    android:id="@+id/readText"
+		    android:layout_below="@+id/postblogText"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textStyle="bold"
+		    android:textColor="@color/gnt_black"
+		    android:textSize="13dp"
+		    android:ellipsize="none"
+		    android:layout_alignParentEnd="true"
+		    android:layout_marginStart="5dp"
+		    android:layout_marginEnd="10dp"
+		    android:layout_marginTop="6dp"
+		    android:paddingEnd="20dp"
+		    android:paddingStart="20dp"
+		    android:paddingTop="4dp"
+		    android:paddingBottom="4dp"
+		    android:text="@string/Lbl_Read"
+		    android:backgroundTint="@color/textLight_color"
+		    android:background="@drawable/shape_radius_btn"
+		    android:layout_alignParentTop="true" />
+
+    </LinearLayout> 
+</RelativeLayout>
+  
